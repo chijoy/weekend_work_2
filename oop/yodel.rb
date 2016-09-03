@@ -9,6 +9,15 @@
 # constructor accordingly.
 
 class Yodel
+  attr_accessor :segment, :count
+
+  def initialize
+    @segment = segment
+    @count = count
+  end
+
+  def articulate
+  end
 
 end
 
