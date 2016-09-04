@@ -11,16 +11,14 @@
 class Yodel
   attr_accessor :segment, :count
 
-  def initialize(hash)
-    hash.each {|segment, key| puts segment}
+  def initialize params = {}
+    params.each { |segment, count| send "#{segment}=", count }
   end
 
   def articulate
-    count * segment
+    segment * count
   end
-
 end
-
 
 # Driver code - don't touch anything below this line.
 puts "TESTING the Yodel class..."
