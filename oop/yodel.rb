@@ -11,12 +11,12 @@
 class Yodel
   attr_accessor :segment, :count
 
-  def initialize
-    @segment = segment
-    @count = count
+  def initialize(hash)
+    hash.each {|segment, key| puts segment}
   end
 
   def articulate
+    count * segment
   end
 
 end
