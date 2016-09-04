@@ -15,6 +15,20 @@
 # Superhero needs a grab_tool method, that sets the has_special_tool attribute to true.
 
 class Superhero
+  attr_accessor :name, :hitpoints, :attack, :alive
+
+  def initialize 
+  end
+
+  def grab_tool
+  end
+
+  def has_special_tool
+  end
+
+  def hit
+  end
+
 end
 # Driver code - don't touch anything below this line.
 puts "TESTING the Superhero class..."
