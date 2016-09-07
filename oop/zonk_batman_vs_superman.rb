@@ -17,18 +17,20 @@
 class Superhero
   attr_accessor :name, :hitpoints, :attack, :alive
 
-  def initialize 
+  def initialize(options={})
+    options=[:name], options=[:hitpoints], options=[:attack]
   end
 
   def grab_tool
+    has_special_tool == true
   end
 
   def has_special_tool
+    false
   end
 
-  def hit
+  def hit(name)
   end
-
 end
 # Driver code - don't touch anything below this line.
 puts "TESTING the Superhero class..."
